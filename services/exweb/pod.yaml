@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: pod1
+  namespace: depy
+  labels:
+    app: demoApp
+spec:
+  containers:
+  - name: ab
+    image: exwebi
+    imagePullPolicy: Never
+    ports:
+      - containerPort: 5056
+  restartPolicy: Never

@@ -1,0 +1,4 @@
+github.com/cbot918/liby v1.2.0 h1:NyRdCn2DWadGdZuIDrmE3Sl7sEB9dQAYFNikYHws0Es=
+github.com/cbot918/liby v1.2.0/go.mod h1:pPBUzSUhSIzOnPLWVQw7xwRHF1sm21fkPiWdnvsD2Kg=
+github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
+github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
