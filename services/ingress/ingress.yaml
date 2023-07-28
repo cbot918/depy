@@ -7,14 +7,6 @@ spec:
     - host: hello.yale.com
       http:
         paths:
-          # - pathType: ImplementationSpecific
-          - path: /api
-            pathType: Prefix
-            backend:
-              service:
-                name: hello1
-                port:
-                  number: 80
           - path: /hi
             pathType: Prefix
             backend:
@@ -22,22 +14,12 @@ spec:
                 name: hi
                 port:
                   number: 3334
+          # - pathType: ImplementationSpecific
+          # - path: /api
+          #   pathType: Prefix
+          #   backend:
+          #     service:
+          #       name: hello1
+          #       port:
+          #         number: 80
 
-# apiVersion: networking.k8s.io/v1
-# kind: Ingress
-# metadata:
-#   name: minimal-ingress
-#   annotations:
-#     nginx.ingress.kubernetes.io/rewrite-target: /
-# spec:
-#   ingressClassName: nginx-example
-#   rules:
-#   - http:
-#       paths:
-#       - path: /testpath
-#         pathType: Prefix
-#         backend:
-#           service:
-#             name: test
-#             port:
-#               number: 80
